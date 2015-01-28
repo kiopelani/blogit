@@ -4,4 +4,4 @@
 
 * Rails version : 4.1.8
 
-This is a simple blogging platform where anyone can read and comment on a blog hosted on this site.  Users can create their own blogs by signing up.
+Blogit is a simple blogging platform where anyone can read and comment on a blog hosted by the app.  Users can create their own blogs too by signing up.
