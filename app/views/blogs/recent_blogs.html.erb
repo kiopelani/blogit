@@ -1,0 +1,8 @@
+<div class="container">
+  <ul class="blog-list">
+  <div class="list-title"><strong>recent blogs</strong></div>
+    <% @blogs.each do |blog| %>
+      <li><%= link_to blog.title.upcase, user_blog_path(blog.user, blog) %> by <%=blog.user.name.downcase %></li>
+    <% end %>
+  </ul>
+</div>

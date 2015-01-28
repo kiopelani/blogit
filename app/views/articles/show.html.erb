@@ -1,0 +1,57 @@
+<div id="article-show">
+  <div class="container">
+    <div class="medium-title"><%= link_to "#{@blog.title.upcase}", user_blog_path(@user, @blog) %>
+      <span id="small-author">by <%= @blog.user.name.downcase %>
+        <% if current_user == @blog.user %>
+          <%= link_to '<i class="fa fa-pencil-square-o"></i>'.html_safe, edit_user_blog_path(@user, @blog) %>
+          <%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, user_blog_path(@user, @blog), method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %>
+      </span>
+    </div>
+  <p>
+
+  <div class="recent-article">
+
+      <div class="article-title-small">
+        <strong><%= @article.title %></strong>
+      </div>
+      <div class="article-date-small">
+       <%= @article.created_at.strftime("%B %d %Y") %>
+      </div>
+      <div class="article-body-small">
+        <%= @article.text.html_safe %>
+      </div>
+      <div class="article-nav">
+        <% if @article_index < @blog_articles.length - 1%>
+          <%= link_to '<< previous', user_blog_article_path(@user, @blog, @blog_articles[@article_index+1]) %>
+        <% end %>
+        <% if @article_index > 0 %>
+          <%= link_to 'next >>', user_blog_article_path(@user, @blog, @blog_articles[@article_index-1]) %>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="archive">
+      <div class="small-title">archive</div>
+      <ul>
+        <%= render @blog.articles %>
+      </ul>
+      <p>
+     <% if current_user == @blog.user %>
+      <%= link_to 'NEW ARTICLE', new_user_blog_article_path(@user, @blog), :class => 'cranberry-button' %>
+    <% end %>
+    </div>
+    <div class="footer">
+    </div>
+
+  </div>
+</div>
+
+<div class="comments">
+    <div class="medium-title">COMMENTS</div>
+    <%= render @article.comments %>
+    <div class="add-comment-form">
+      <h4>Add a comment:</h4>
+      <%= render 'comments/form' %>
+    </div>
+</div>

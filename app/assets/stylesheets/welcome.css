@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cc0066;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navbar {
+  list-style-type: none;
+  background-color: #cc0066;
+}
+
+.navbar li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+/*  border-radius: 6%;
+*/
+  padding: 10px 15px 10px 15px;
+  font-size: 1em;
+  margin-right: 2%;
+}
+
+#sign-up a{
+  float: right;
+  background-color: white;
+  color: #cc0066;
+}
+
+#log-in a{
+  float: right;
+  background-color: pink;
+  color: white;
+}
+
+#log-out a{
+  float: right;
+  background-color: pink;
+  color: white;
+}
+
+.navbar #brand a{
+  font-size: 2em;
+  padding: 5px 5px 5px 0;
+  color: white;
+}
+
+.navbar #brand a:hover{
+  font-size: 2em;
+  padding: 5px 5px 5px 0;
+  color: lightpink;
+}
+
+.navbar #brand a:visited{
+  font-size: 2em;
+  padding: 5px 5px 5px 0;
+  color: white;
+}
+
+#landing-center {
+  text-align: center;
+  padding: 10%;
+}
+
+#big-brand {
+  font-size: 6em;
+  font-family: 'Muli', sans-serif;
+}
+
+#tagline {
+  font-size: 1.8em;
+  padding-top: 1%;
+  padding-bottom: 1%;
+    font-family: 'Muli', sans-serif;
+
+}
+
+#button-container {
+  margin-top: 10%;
+}
+
+.big-button {
+  font-size: 2em;
+  text-decoration: none;
+  color: #cc0066;
+  background-color: white;
+  border: none;
+  font-family: 'Muli', sans-serif;
+  padding: 5%;
+  margin: 5%;
+}
+
+.big-button:hover{
+  background-color: black;
+}
+
+.container {
+  margin: 5%;
+  padding: 2%;
+  background-color: white;
+  color: black;
+}
+
+.blog-list {
+  margin-left: 25%;
+  width: 40%;
+  margin-right: 25%;
+  padding: 1% 5% 2% 5%;
+}
+
+.list-title {
+  font-size: 2.5em;
+  margin: 2% 0 3% 0;
+}
+
+.blog-list a{
+  font-family: 'Muli', sans-serif;
+  text-decoration: none;
+  color: #cc0066;
+}
+
+.blog-list a:hover{
+  color: lightpink;
+}
+
+.notice, .alert {
+  margin: 2%;
+}
+
+.devise-links a{
+  color: white;
+}
+
+.sign-in-form {
+  box-shadow: 1px 1px 15px 1px lightpink;
+  font-family: 'Muli', sans-serif;
+}
+
+.sign-in-form .field {
+  margin-bottom: 1%;
+}
+
+.small-button {
+  background-color: lightpink;
+  color: white;
+  border: none;
+  font-size: 1em;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-family: 'Muli', sans-serif;
+}
+
+.small-button:hover{
+  color: #cc0066;
+}
+
+.log-in-form {
+  box-shadow: 1px 1px 15px 1px lightpink;
+  font-family: 'Muli', sans-serif;
+}
+
+.log-in-form .field {
+  margin-bottom: 1%;
+}
+
+/*footer {
+  padding: 1%;
+  margin: 0;
+  font-size: .7em;
+}
+
+footer p {
+  float: right;
+}*/
+
+#user-home {
+  background-color: white;
+  margin: 0;
+  padding: 2%;
+  color: black;
+}
+
+#user-home ul {
+  margin-bottom: 5%;
+}
+
+#user-home ul a{
+  color: #cc0066;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+#user-home ul a:hover{
+  color: lightpink;
+}
+
+.medium-button {
+  border: 1px solid pink;
+  background-color: lightpink;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 1%;
+}
+
+#your-blog-header {
+  font-size: 2em;
+}
+
+@media (max-width: 629px) {
+
+  .navbar li a {
+    padding: 2%;
+  }
+
+  body {
+    font-size: .5em;
+  }
+}

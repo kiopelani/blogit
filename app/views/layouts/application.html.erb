@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blogit</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', 'http://fonts.googleapis.com/css?family=Dosis|Abel|Muli|Josefin+Sans|Open+Sans+Condensed:300' %>
+  <%= stylesheet_link_tag    'application', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<ul class="navbar">
+  <li id="brand"><%= link_to 'blogit.', root_path %></li>
+<% if current_user %>
+  <li id="log-out"><%= link_to 'log out', destroy_user_session_path, method: :delete %></li>
+<% else %>
+    <li id="sign-up"><%= link_to 'sign up', new_user_registration_path %></li>
+    <li id="log-in"><%= link_to 'log in', new_user_session_path %></li>
+<% end %>
+</ul>
+<!-- <p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p> -->
+<%= yield %>
+
+<!-- <footer>
+  <p>created by kiope gyzen</p>
+</footer> -->
+
+</body>
+</html>

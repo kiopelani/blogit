@@ -1,0 +1,128 @@
+#new-blog-form {
+  background-color: white;
+  margin: 0;
+  padding: .5% 2% 1% 2%;
+}
+
+.back-button {
+  text-decoration: none;
+  color: #cc0066;
+  clear: both;
+}
+
+#blog-home {
+  background-color: white;
+  margin: 0;
+  padding: .5% 2% 1% 2%;
+}
+
+.big-title {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 3%;
+}
+
+.big-title #author {
+  font-size: .2em;
+  color: #cc0066;
+}
+
+.big-title #author i {
+  color: black;
+}
+
+.big-title #author i:hover {
+  color: pink;
+}
+
+.little-title {
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.recent-article {
+  float: left;
+  width: 60%;
+}
+
+.archive{
+  float: left;
+  border-left: 5px solid black;
+  margin-left: 10%;
+  margin-top: 5%;
+  padding-left: 3%;
+  width: 25%;
+}
+
+.small-title {
+  font-size: 1.3em;
+  font-style: bold;
+}
+
+.article-title-small {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 2%;
+}
+
+.article-date-small {
+  color: gray;
+  font-size: 1em;
+  text-align: center;
+}
+
+.article-body-small {
+  font-size: 1em;
+  font-family: 'Muli', sans-serif;
+  margin: 2%;
+}
+
+.footer {
+  clear: both;
+}
+
+.previous-article-small a{
+  color: #cc0066;
+  text-decoration: none;
+}
+
+.previous-article-small a:visited{
+  color: #cc0066;
+  text-decoration: none;
+}
+
+
+.archive-title a{
+  color: #cc0066;
+  text-decoration: none;
+}
+
+.archive-title a:hover {
+  color: pink;
+}
+
+.archive-icons a{
+  color: black;
+}
+
+.archive-icons a:hover{
+  color: pink;
+}
+
+.archive-icons a:visited{
+  color: black;
+}
+
+.archive ul {
+  padding: 0 0 10% 0;
+  list-style-type: none;
+}
+
+.cranberry-button {
+  background-color: #cc0066;
+  color: white;
+  text-decoration: none;
+  padding: 4%;
+}
+

@@ -1,0 +1,11 @@
+<div id="user-home">
+  <div class="container">
+    <div id="your-blog-header">Your Blogs</div>
+    <ul>
+    <% @user_blogs.each do |blog| %>
+      <li><%= link_to "#{blog.title}", user_blog_path(@user, blog) %></li>
+    <% end %>
+    </ul>
+    <%= link_to "NEW BLOG", new_user_blog_path(@user), :class => 'medium-button' %>
+  </div>
+</div>

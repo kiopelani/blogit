@@ -1,0 +1,7 @@
+<div class="comment">
+  <% if current_user == comment.article.blog.user %>
+    <%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, [comment.article.blog.user, comment.article.blog, comment.article, comment], method: :delete, data: { confirm: 'Are you sure?'} %>
+  <% end %>
+
+  <%= "#{comment.body}" %> <div class="commenter"> posted by <%="#{comment.commenter}" %> </div>
+</div>

@@ -1,0 +1,8 @@
+<li><span class="archive-title"><%= link_to "#{article.title}", user_blog_article_path(article.blog.user, article.blog, article) %></span>
+<% if current_user == article.blog.user %>
+<span class="archive-icons">
+  <%= link_to '<i class="fa fa-pencil-square-o"></i>'.html_safe, edit_user_blog_article_path(article.blog.user, article.blog, article) %>
+  <%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, [article.blog.user, article.blog, article], method: :delete, data: { confirm: 'Are you sure?'} %>
+</span>
+<% end %>
+</li>
