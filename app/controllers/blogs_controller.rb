@@ -8,6 +8,7 @@ class BlogsController < ApplicationController
   def show
     @user = User.find(params[:user_id])
     @blog = @user.blogs.find(params[:id])
+    @blog_articles = @blog.articles.order('created_at DESC')
     @article = @blog.articles.order('created_at DESC').first
   end
 

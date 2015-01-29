@@ -5,3 +5,6 @@
 * Rails version : 4.1.8
 
 Blogit is a simple blogging platform where anyone can read and comment on a blog hosted by the app.  Users can create their own blogs too by signing up.
+
+http://blogit-kiope.herokuapp.com/
+

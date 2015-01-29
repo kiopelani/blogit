@@ -8,8 +8,7 @@
         <% end %>
         </span>
       </div>
-<!--       <div class="little-title"><%=@blog.subtitle %></div>
- -->
+
  <% if @article %>
     <div class="recent-article">
 
@@ -22,9 +21,9 @@
       <div class="article-body-small">
         <%= @article.text.html_safe %>
       </div>
-     <% if @blog.articles.length > 1 %>
+     <% if @blog_articles.length > 1 %>
         <div class="previous-article-small">
-          <%= link_to '<< previous', user_blog_article_path(@user, @blog, @blog.articles[1]) %>
+          <%= link_to '<< previous', user_blog_article_path(@user, @blog, @blog_articles[1]) %>
         </div>
       <% end %>
     </div>
@@ -33,7 +32,7 @@
     <div class="archive">
       <div class="small-title">archive</div>
       <ul>
-        <%= render @blog.articles %>
+        <%= render @blog_articles %>
       </ul>
       <p>
      <% if current_user == @blog.user %>
