@@ -1,7 +1,7 @@
 <div id="article-show">
   <div class="container">
-    <div class="medium-title"><%= link_to "#{@blog.title.upcase}", user_blog_path(@user, @blog) %>
-      <span id="small-author">by <%= @blog.user.name.downcase %>
+    <div class="big-title"><%= link_to "#{@blog.title.upcase}", user_blog_path(@user, @blog) %>
+      <span id="author">by <%= @blog.user.name.downcase %>
         <% if current_user == @blog.user %>
           <%= link_to '<i class="fa fa-pencil-square-o"></i>'.html_safe, edit_user_blog_path(@user, @blog) %>
           <%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, user_blog_path(@user, @blog), method: :delete, data: { confirm: 'Are you sure?' } %>
