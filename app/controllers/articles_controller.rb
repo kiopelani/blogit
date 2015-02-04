@@ -1,11 +1,5 @@
 class ArticlesController < ApplicationController
-  # http_basic_authenticate_with name: "Kiope", password: "secret", except: [:index, :show]
-  before_action :authenticate_user!, except: [:index, :show]
-  # def index
-  #   @user = User.find(params[:user_id])
-  #   @blog = @user.blogs.find(params[:blog_id])
-  #   @articles = @blog.articles
-  # end
+  before_action :authenticate_user!, except: [:show]
 
   def show
     @user = User.find(params[:user_id])
